@@ -1,0 +1,25 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>P2P JS Platformer</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <div id="network-panel">
+    <div id="status">Перевірка кімнати...</div>
+    <button id="action-btn" style="display:none;">Я підключився, почати гру!</button>
+    <div class="reset-row">
+      <a href="#" id="reset-link">Не та кімната? Створити нову</a>
+    </div>
+  </div>
+
+  <canvas id="gameCanvas" width="800" height="400"></canvas>
+
+  <!-- Точка входу. Все інше — ES-модулі, підключені через import у main.js -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
